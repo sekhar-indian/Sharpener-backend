@@ -32,7 +32,7 @@ const sever=http.createServer((req,res)=>{
             console.log(paesedBody)
             const message=paesedBody.split('=')[1];
             fs.writeFileSync('masage.text',message);
-            
+               
         });
        
         res.statusCode=302;
@@ -53,3 +53,5 @@ sever.listen(3000);
 
 
 
+
+//
